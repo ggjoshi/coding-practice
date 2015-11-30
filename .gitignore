@@ -1,3 +1,13 @@
+.idea
+.settings
+target
+.idea
+.DS_Store
+.classpath
+.project
+*.iml
+*.tar.gz
+*/*.iml
 *.class
 
 # Mobile Tools for Java (J2ME)
