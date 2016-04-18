@@ -13,12 +13,8 @@ public class ShareTrading {
         int minElementSoFar = input[0];
         for(int i = 1; i < input.length; i++) {
             int currentProfit = (input[i] - minElementSoFar);
-            if(maxProfitSoFar < currentProfit) {
-                maxProfitSoFar = currentProfit;
-            }
-            if(input[i] < minElementSoFar) {
-                minElementSoFar = input[i];
-            }
+            maxProfitSoFar = Math.max(currentProfit, maxProfitSoFar);
+            minElementSoFar = Math.min(input[i], minElementSoFar);
         }
         return maxProfitSoFar;
     }
